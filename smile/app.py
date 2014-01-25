@@ -14,25 +14,25 @@ class Messaging(AppBase):
 			if location == 'HEBRON':
 				msg.respond('Al-Atqia Mosque, King Faisal Street, Hebron. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'NABLUS':
+			elif location == 'NABLUS':
 				msg.respond('Fatimid School, Omar Ibn Al-Khattab Street, Nablus. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'RAFAH':
+			elif location == 'RAFAH':
 				msg.respond('Alrahma Mosque, Othman Bn Afaan, Rafah. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'RAMALLAH':
+			elif location == 'RAMALLAH':
 				msg.respond('Alrahman Mosque, Alsawsan Street, Ramallah. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'GAZA':
+			elif location == 'GAZA':
 				msg.respond('Omary Mosque, Omar Al-Mukhtar Street, Gaza. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'JERUSALEM':
+			elif location == 'JERUSALEM':
 				msg.respond('Maha Pharmacy, Steah Street, Jerusalem. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'BETHLEHEM':
+			elif location == 'BETHLEHEM':
 				msg.respond('Beit Jala Hospital, Madares Street, Bethlehem. 15-20 February 2014, 0800-1700')
 				return True
-			if location == 'JERICHO':
+			elif location == 'JERICHO':
 				msg.respond('Al Satafi Pharmacy, Jamal Abd Al-Naser, Jericho. 15-20 February 2014, 0800-1700')
 				return True
 			else:
