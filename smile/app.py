@@ -9,7 +9,7 @@ class Messaging(AppBase):
 			msg.respond('Please reply with municipality.')
 			return True
 		else:
-			location = string.lsplit(msg_txt, 'SMILE IN ')
+			location = string.lstrip(msg_txt, 'SMILE IN ')
 
 			if location == 'HEBRON':
 				msg.respond('Al-Atqia Mosque, King Faisal Street, Hebron. 15-20 February 2014, 0800-1700')
