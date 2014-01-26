@@ -12,6 +12,10 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 # wsgi.py, fixtures, etc.
 PROJECT_PATH = os.path.join(PROJECT_ROOT, 'rapidsms_opsmile')
 
+# Project name that overrides the default ('RapidSMS'),
+# used in the default response when smile/app.py returns False.
+PROJECT_NAME = 'Operation Smile'
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
