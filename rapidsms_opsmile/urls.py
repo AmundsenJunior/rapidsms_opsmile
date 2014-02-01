@@ -1,5 +1,3 @@
-from django.conf import settings
-from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.conf.urls.defaults import *
@@ -19,7 +17,7 @@ urlpatterns = patterns('',
     (r'^messaging/', include('rapidsms.contrib.messaging.urls')),
     (r'^registration/', include('rapidsms.contrib.registration.urls')),
     url(r'^backend/kannel-fake-smsc/$',
-        KannelBAckendView.as_view(backend_name='kannel-fake-smsc')),
+        KannelBackendView.as_view(backend_name='kannel-fake-smsc')),
 
     # Third party URLs
     (r'^selectable/', include('selectable.urls')),
