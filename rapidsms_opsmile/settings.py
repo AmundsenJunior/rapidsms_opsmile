@@ -214,6 +214,17 @@ INSTALLED_APPS = (
 INSTALLED_BACKENDS = {
     "message_tester": {
         "ENGINE": "rapidsms.backends.database.DatabaseBackend",
+    }
+    "kannel-fake-smsc" : {
+        "ENGINE":  "rapidsms.backends.kannel.KannelBackend",
+        "sendsms_url": "http://127.0.0.1:13013/cgi-bin/sendsms",
+        "sendsms_params": {"smsc": "FAKE",
+                           "from": "123", # not set automatically by SMSC
+                           "username": "rapidsms",
+                           "password": "CHANGE-ME"}, # or set in localsettings.py
+        "coding": 0,
+        "charset": "ascii",
+        "encode_errors": "ignore", # strip out unknown (unicode) characters
     },
 }
 
