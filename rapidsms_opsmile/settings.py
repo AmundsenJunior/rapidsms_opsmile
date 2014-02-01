@@ -214,8 +214,8 @@ INSTALLED_APPS = (
 INSTALLED_BACKENDS = {
     "message_tester": {
         "ENGINE": "rapidsms.backends.database.DatabaseBackend",
-    }
-    "kannel-fake-smsc" : {
+    },
+    "kannel-fake-smsc": {
         "ENGINE":  "rapidsms.backends.kannel.KannelBackend",
         "sendsms_url": "http://127.0.0.1:13013/cgi-bin/sendsms",
         "sendsms_params": {"smsc": "FAKE",
