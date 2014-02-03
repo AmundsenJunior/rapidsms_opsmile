@@ -10,7 +10,7 @@ void setup()
   SIM900power();
   delay(20000);
   
-  SIM900.print("AT+CMGF=1\r");
+  SIM900.print("AT+CMGF=1\r"); // set SMS mode to text
   delay(100);
   SIM900.print("AT+CNMI=2,2,0,0,0\r");
   delay(100);
